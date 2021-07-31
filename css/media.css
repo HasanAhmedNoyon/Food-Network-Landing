@@ -6,55 +6,112 @@
     .navbar-nav {
         padding: 10px 0;
     }
+
     .nav-item {
         text-align: center;
         background-color: transparent;
         padding: 5px 0;
     }
 
-    .header-left{
+    .header-left {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    } 
-    
+    }
+
     .header-content {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .header-content h1 {
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 21px;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
+
     .header-content p {
         margin-top: 20px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         color: #828282;
         line-height: 160%;
         /* or 32px */
         letter-spacing: -0.02em;
     }
+
     .header-content a {
         margin-top: 10px;
         font-size: 14px;
     }
+
     .header-content img {
-    object-fit: contain;
+        object-fit: contain;
+        height: 80%;
+        padding-bottom: 40px;
     }
+
     @media only screen and (min-width: 420px) {
         .header-content h1 {
             font-size: 28px;
         }
+    }
+
+    /*Header Section End*/
+
+    /*About Me section start*/
+    .about-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .about-content h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        color: #707070;
+    }
+
+    .about-content p {
+        margin-top: 0;
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        font-feature-settings: 'liga'off;
+        color: #18191fba;
+    }
+
+    .about-content a {
+        font-family: Montserrat;
+        margin-top: 10px;
+        background: linear-gradient(88.33deg, #fba24f -7.64%, #ff1e1e 145.94%);
+        border-radius: 100px;
+        border: none !important;
+        cursor: pointer;
+        color: #000;
+        font-size: 14px;
+        padding: 10px 25px;
+        font-weight: 600;
+    }
+
+    .about-image img {
+        object-fit: contain;
+        height: 85%;
     }
 }
 
@@ -66,11 +123,13 @@
     .navbar-nav {
         padding: 10px 0;
     }
+
     .nav-item {
         text-align: center;
         background-color: transparent;
         padding: 4px 0;
     }
+
     .header-content {
         text-align: center;
         display: flex;
@@ -84,19 +143,72 @@
         flex-direction: column;
         align-items: center;
     }
+
     .header-content h1 {
         font-size: 32px;
     }
+
     .header-content p {
         margin-top: 20px;
         font-size: 18px;
     }
+
     .header-content a {
         margin-top: 10px;
         font-size: 15px;
     }
+
     .header-content img {
         padding: 25px;
+    }
+
+    /*Header Section End */
+
+    /*About Me section start*/
+    .about-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .about-content h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: #707070;
+    }
+
+    .about-content p {
+        margin-top: 0;
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        font-feature-settings: 'liga'off;
+        color: #18191fba;
+    }
+
+    .about-content a {
+        font-family: Montserrat;
+        margin-top: 10px;
+        background: linear-gradient(88.33deg, #fba24f -7.64%, #ff1e1e 145.94%);
+        border-radius: 100px;
+        border: none !important;
+        cursor: pointer;
+        color: #000;
+        font-size: 16px;
+        padding: 10px 25px;
+        font-weight: 600;
+    }
+
+    .about-image img {
+        object-fit: contain;
+        height: 80%;
     }
 }
 
@@ -108,14 +220,16 @@
     .navbar-nav {
         padding: 10px 0;
     }
+
     .nav-item {
         text-align: center;
         background-color: transparent;
         padding: 5px 0;
     }
+
     .header-content {
-        margin:  0;
-        padding-top: 0px;
+        margin: 0;
+        padding-top: 0;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -128,22 +242,69 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
     .header-content h1 {
         font-size: 30px;
         text-align: left;
     }
+
     .header-content p {
         margin-top: 20px;
         font-size: 15px;
         text-align: left;
     }
+
     .header-content a {
         margin-top: 10px;
         font-size: 15px;
     }
-    .header-content img{   
+
+    .header-content img {
         object-fit: contain;
     }
+
+    /*Header Section End */
+
+    /*About Me section start*/
+    .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .about-content h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 39px;
+        line-height: 25px;
+        color: #707070;
+    }
+
+    .about-content p {
+        margin-top: 15px;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        font-feature-settings: 'liga'off;
+        color: #18191fba;
+    }
+
+    .about-content a {
+        font-family: Montserrat;
+        margin-top: 10px;
+        background: linear-gradient(88.33deg, #fba24f -7.64%, #ff1e1e 145.94%);
+        border-radius: 100px;
+        border: none !important;
+        cursor: pointer;
+        color: #000;
+        font-size: 16px;
+        padding: 10px 25px;
+        font-weight: 600;
+    }
+
 }
 
 /*large Devices*/
@@ -151,9 +312,7 @@
 /*lg (992-1199)*/
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .header-content {
-        
-    }
+
 
     .header-left {
         display: flex;
@@ -161,20 +320,24 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
     .header-content h1 {
         font-size: 30px;
         text-align: left;
     }
+
     .header-content p {
         margin-top: 20px;
         font-size: 15px;
         text-align: left;
     }
+
     .header-content a {
         margin-top: 10px;
         font-size: 15px;
     }
-    .header-content img{   
+
+    .header-content img {
         object-fit: contain;
     }
 }

@@ -1,5 +1,4 @@
 /*CUSTOM PRELOADER*/
-
 .loader-bg {
     position: fixed;
     z-index: 999999;
@@ -21,7 +20,7 @@
 .loader-p:before,
 .loader-p:after {
     content: '';
-    border: 1em solid #15e38a;
+    border: 1em solid #00ff91c0;
     border-radius: 50%;
     width: inherit;
     height: inherit;

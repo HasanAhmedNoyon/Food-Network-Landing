@@ -129,7 +129,7 @@ header nav .navbar-brand {
 /*About me Section start*/
 
 .about {
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     padding: 20px 20px 0px;
     background-image: url(../img/about-me-bg.jpg);
     background-position: center center;
@@ -170,9 +170,9 @@ header nav .navbar-brand {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 28px;
     font-feature-settings: 'liga' off;
-    color: #18191F;
+    color: #18191fba;
 }
 
 .about-content a {
@@ -193,3 +193,5 @@ header nav .navbar-brand {
 
 }
 /*About me Section End*/
+
+/**/
