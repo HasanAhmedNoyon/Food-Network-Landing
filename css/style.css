@@ -7,7 +7,7 @@
 }
 
 header {
-    height: 90vh;
+    min-height: 100vh;
     background-color: #f7f7f7;
 }
 
@@ -68,10 +68,14 @@ header nav .navbar-brand {
     width: 47%
 }
 
-.header-row {
+.header-content{
+    padding-top: 20px;
+}
+.header-left{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .header-content h1 {
@@ -110,10 +114,82 @@ header nav .navbar-brand {
     font-size: 18px;
     padding: 10px 25px;
     font-weight: 600;
-
 }
 
-.header-content a:hover{
+.header-content a:hover {
     color: white;
     font-weight: 600;
 }
+
+.header-content img {
+    object-fit: cover;
+    height: 90vh;
+}
+
+/*About me Section start*/
+
+.about {
+    margin-bottom: 50px; 
+    padding: 20px 20px 0px;
+    background-image: url(../img/about-me-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.about-image img {
+    height: 90%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-content h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    color: #707070;
+}
+
+.about-content p{
+    margin-top: 15px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: 'liga' off;
+    color: #18191F;
+}
+
+.about-content a {
+    font-family: Montserrat;
+    margin-top: 25px;
+    background: linear-gradient(88.33deg, #FBA24F -7.64%, #FF1E1E 145.94%);
+    border-radius: 100px;
+    border: none !important;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+.about-content a:hover {
+    color: white;
+    font-weight: 600;
+
+}
+/*About me Section End*/
