@@ -536,3 +536,49 @@ header nav .navbar-brand {
     color: black;
 }
 /*FAQ Section End */
+
+
+/*Dashborar Section Start*/
+.dashboard{
+    height: 200px;
+    margin: 50px 0px 100px;
+}
+.dashbaord-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 50px 0px;
+}
+.dashboard-content{
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 125px;
+    flex-direction: column;
+}
+
+.dashboard-content h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #18191F;
+}
+
+.dashboard-content p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191F;
+}
+
+/*Dashborar Section End*/
