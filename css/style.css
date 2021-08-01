@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -68,10 +69,11 @@ header nav .navbar-brand {
     width: 47%
 }
 
-.header-content{
+.header-content {
     padding-top: 20px;
 }
-.header-left{
+
+.header-left {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -164,34 +166,373 @@ header nav .navbar-brand {
     color: #707070;
 }
 
-.about-content p{
+.about-content p {
     margin-top: 15px;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;
-    font-feature-settings: 'liga' off;
+    font-feature-settings: 'liga'off;
     color: #18191fba;
 }
 
 .about-content a {
     font-family: Montserrat;
     margin-top: 25px;
-    background: linear-gradient(88.33deg, #FBA24F -7.64%, #FF1E1E 145.94%);
     border-radius: 100px;
     border: none !important;
     cursor: pointer;
-    color: black;
+    color: white;
+    background: #4E44E1;
     font-size: 18px;
     padding: 10px 25px;
     font-weight: 600;
 }
+
 .about-content a:hover {
     color: white;
     font-weight: 600;
 
 }
+
 /*About me Section End*/
 
-/**/
+/*Recipies Section Start */
+.recipies {
+    margin: 100px 0px;
+}
+
+
+.recipies .heading {
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.recipies .heading span{
+    display: inline;
+    opacity: 0;
+    position: relative;
+    height: 2px;
+    width: 0%;
+    left:0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+    background-color: rgb(0, 0, 0);
+    transition: .5s all ease-in-out;
+}
+
+.recipies:hover .heading span{
+    width: 40%;
+    opacity: .75;
+}
+
+.recipies .heading h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.recipies .heading p {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #252525;
+    padding: 0px 10%;
+}
+
+.recipies-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipies-content {
+    padding: 10px;
+    min-height: 450px;
+    float: left;
+    margin: 5px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+.recipies-content:hover {
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+}
+
+.recipies-content img {
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.recipies-content h1 {
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 28px;
+    color: #18191F;
+}
+
+.recipies-content p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #18191F;
+}
+
+.recipies-content a {
+    border-radius: 35px;
+    background-color: #a7dbf542;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 17px;
+    font-family: 'Montserrat';
+    border: 2px solid black;
+
+}
+
+
+.recipies-content a:hover {
+    color: black;
+    font-weight: 900;
+}
+
+/*Recipies Section End */
+
+/*Testimonial Section Start */
+.testimonial {
+    min-height: 700px;
+    background: url('../img/testimonial-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+   
+}
+
+.testimonial .heading{
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.testimonial .heading span{
+    display: inline;
+    opacity: 0;
+    position: relative;
+    height: 2px;
+    width: 0%;
+    left:0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+    background-color: white;
+    transition: .5s all ease-in-out;
+}
+
+.testimonial:hover .heading span{
+    width: 40%;
+    opacity: .5;
+}
+
+.testimonial .heading h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.testimonial .heading p{
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #e4e1e1;
+    padding: 0px 10%;
+
+}
+
+.slider-content {
+    border-radius: 50px;
+}
+
+.slider-content .testimonial-content {
+    min-height: 200px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-content .testimonial-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content .testimonial-image img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+}
+
+.slider-content .testimonial-image p {
+    color: white;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slider-content .testimonial-speech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content .testimonial-speech i {
+    color: white;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.owl-theme .owl-nav{
+    margin: 0px;
+} 
+
+.owl-theme .owl-dots .owl-dot.active span{
+    background: white;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #ffffff59;
+}
+
+
+
+/*Testimonial Section End */
+
+
+/*FAQ Section Start */
+.faq{
+    min-height: 300px;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+.accordion-section{
+    display: flex;
+    align-items: center;
+
+}
+.accordion-flush{
+    width: 100% !important;
+}
+.accordion-body {
+    text-align: left;
+}
+
+
+.accordion-button:not(.collapsed){
+    color: black !important;
+}
+.faq .heading {
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.faq .heading span{
+    display: inline;
+    opacity: 0;
+    position: relative;
+    height: 2px;
+    width: 0%;
+    left:0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+    background-color: rgb(99, 99, 99);
+    transition: .5s all ease-in-out;
+}
+
+.faq:hover .heading span{
+    width: 40%;
+    opacity: .75;
+}
+
+.faq .heading h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.faq p{
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+/*FAQ Section End */
