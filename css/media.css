@@ -120,7 +120,7 @@
     .testimonial .heading h1 {
         font-size: 32px;
     }
-    
+
     .recipies,
     .testimonial .heading p {
         font-family: Montserrat;
@@ -154,6 +154,32 @@
         font-weight: normal;
         font-size: 10px;
         text-align: center;
+    }
+
+    .icon-box p {
+        margin-left: 1px;
+        display: inline;
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    form button {
+        padding: 8px 22px !important;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+        color: black;
+        font-family: Manrope;
+    }
+
+    .footer-content p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 22px;
+        margin-top: 12px;
     }
 
 
@@ -254,6 +280,14 @@
         object-fit: contain;
         height: 80%;
     }
+
+    .footer-content p {
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 15px;
+    }
+
 }
 
 /*Medium Devices*/
@@ -372,6 +406,26 @@
         line-height: 21px;
         color: #18191F;
 
+    }
+    .faq p {
+        font-size: 9px;
+    }
+    .icon-box p {
+        font-size: 11px;
+    }
+    
+    ::placeholder {
+        font-size: 14px;
+        color: black;
+        font-family: Manrope;
+    }
+    
+    form button {
+        padding: 10px 25px !important;
+    }
+
+    .recipies-content a {
+        font-size: 12px;
     }
 
 

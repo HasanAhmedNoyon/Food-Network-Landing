@@ -213,20 +213,21 @@ header nav .navbar-brand {
     flex-direction: column;
 
 }
-.recipies .heading span{
+
+.recipies .heading span {
     display: inline;
     opacity: 0;
     position: relative;
     height: 2px;
     width: 0%;
-    left:0%;
+    left: 0%;
     bottom: 0%;
     transform: translate(0%, 0%);
     background-color: rgb(0, 0, 0);
     transition: .5s all ease-in-out;
 }
 
-.recipies:hover .heading span{
+.recipies:hover .heading span {
     width: 40%;
     opacity: .75;
 }
@@ -332,38 +333,48 @@ header nav .navbar-brand {
     background-size: cover;
     display: flex;
     align-items: center;
-   
+    position: relative;
 }
 
-.testimonial .heading{
+.testimonial::before {
+    content: 'Hasan';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonial .heading {
     text-align: center;
     min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+
 }
 
-.testimonial .heading span{
+.testimonial .heading span {
     display: inline;
     opacity: 0;
     position: relative;
     height: 2px;
     width: 0%;
-    left:0%;
+    left: 0%;
     bottom: 0%;
     transform: translate(0%, 0%);
     background-color: white;
     transition: .5s all ease-in-out;
 }
 
-.testimonial:hover .heading span{
+.testimonial:hover .heading span {
     width: 40%;
     opacity: .5;
 }
 
-.testimonial .heading h1{
+.testimonial .heading h1 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -375,9 +386,10 @@ header nav .navbar-brand {
     text-transform: capitalize;
     justify-content: center;
     color: whitesmoke;
+    z-index: 1;
 }
 
-.testimonial .heading p{
+.testimonial .heading p {
     margin-top: 20px;
     font-family: Montserrat;
     font-style: normal;
@@ -389,11 +401,14 @@ header nav .navbar-brand {
     text-align: center;
     color: #e4e1e1;
     padding: 0px 10%;
+    z-index: 2;
 
 }
 
 .slider-content {
     border-radius: 50px;
+    z-index: 3;
+    cursor: grab;
 }
 
 .slider-content .testimonial-content {
@@ -445,11 +460,11 @@ header nav .navbar-brand {
 
 }
 
-.owl-theme .owl-nav{
+.owl-theme .owl-nav {
     margin: 0px;
-} 
+}
 
-.owl-theme .owl-dots .owl-dot.active span{
+.owl-theme .owl-dots .owl-dot.active span {
     background: white;
     height: 13px;
     width: 13px;
@@ -466,28 +481,32 @@ header nav .navbar-brand {
 
 
 /*FAQ Section Start */
-.faq{
+.faq {
     min-height: 300px;
     display: flex;
     margin-top: 100px;
     align-items: center;
 }
-.accordion-section{
+
+.accordion-section {
     display: flex;
     align-items: center;
 
 }
-.accordion-flush{
+
+.accordion-flush {
     width: 100% !important;
 }
+
 .accordion-body {
     text-align: left;
 }
 
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     color: black !important;
 }
+
 .faq .heading {
     text-align: center;
     min-height: 50px;
@@ -497,20 +516,21 @@ header nav .navbar-brand {
     flex-direction: column;
 
 }
-.faq .heading span{
+
+.faq .heading span {
     display: inline;
     opacity: 0;
     position: relative;
     height: 2px;
     width: 0%;
-    left:0%;
+    left: 0%;
     bottom: 0%;
     transform: translate(0%, 0%);
     background-color: rgb(99, 99, 99);
     transition: .5s all ease-in-out;
 }
 
-.faq:hover .heading span{
+.faq:hover .heading span {
     width: 40%;
     opacity: .75;
 }
@@ -528,22 +548,24 @@ header nav .navbar-brand {
     justify-content: center;
 }
 
-.faq p{
+.faq p {
     font-family: Montserrat;
     font-weight: normal;
     font-size: 14px;
     font-weight: bold;
     color: black;
 }
+
 /*FAQ Section End */
 
 
 /*Dashborar Section Start*/
-.dashboard{
-    height: 200px;
-    margin: 50px 0px 100px;
+.dashboard {
+    min-height: 200px;
+    margin: 50px 0px 50px;
 }
-.dashbaord-project{
+
+.dashbaord-project {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,7 +574,8 @@ header nav .navbar-brand {
     border-radius: 20px;
     padding: 50px 0px;
 }
-.dashboard-content{
+
+.dashboard-content {
     padding: 10px;
     height: 100px;
     text-align: center;
@@ -563,7 +586,7 @@ header nav .navbar-brand {
     flex-direction: column;
 }
 
-.dashboard-content h3{
+.dashboard-content h3 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -572,7 +595,7 @@ header nav .navbar-brand {
     color: #18191F;
 }
 
-.dashboard-content p{
+.dashboard-content p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -582,3 +605,107 @@ header nav .navbar-brand {
 }
 
 /*Dashborar Section End*/
+
+
+
+/*Form Section Start*/
+.feedback {
+    min-height: 500px;
+    margin: 100px 0px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-content {
+    min-height: 400px;
+
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+
+.icon-box {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-box i {
+    font-size: 18px;
+}
+
+.icon-box p {
+    margin-left: 5px;
+    display: inline;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+}
+::placeholder{
+    font-size: 16px;
+    color: black;
+    font-family: Manrope;
+}
+
+form button {
+    font-family: Manrope;
+    background: linear-gradient(88.33deg, #FBA24F -7.64%, #FF1E1E 145.94%);
+    padding: 10px 35px !important;
+    border-radius: 7px !important;
+    color: white !important;
+    font-size: 16px !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+}
+
+/*Footer Section Start*/
+footer {
+    height: 200px;
+    margin-top: 20px;
+    background-color: #0B0D17;
+}
+
+.footer-container {
+    margin: 0% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 29px;
+    color: #5B5B5B;
+}
+
+.footer-content h1 span {
+    color: rgba(251, 162, 79, 1);
+}
+
+.footer-content p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+    
+}
